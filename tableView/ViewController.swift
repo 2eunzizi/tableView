@@ -75,7 +75,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             alertController.addAction(UIAlertAction(title: "OK", style: .default, handler:{[weak alertController](_)in
                 let nameField = alertController?.textFields![0]
                 let name = nameField?.text
-                self.animals.append(name!)
+                self.animals.append(name: "Giraffe", image: UIImage(named: "giraffe.jpg")!)
                 self.tableView.reloadData()
             }))
             present(alertController, animated: true, completion: nil)
