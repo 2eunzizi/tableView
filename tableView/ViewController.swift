@@ -10,12 +10,16 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
-    var animals: [String] = ["Giraffe", "Elephant", "Sheep", "Lion", "Horse"]
+   
     
-    struct aniamlList {
+    struct animalList {
         var name: String
         var image: UIImage
     }
+    
+     var animals: [animalList] = []
+    
+    var Giraffe = animalList(name: "Giraffe", image: UIImage(named: "giraffe.jpg")!)
     
     let cellReuseIdentifier = "cell"
     
@@ -38,7 +42,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
             let cell:UITableViewCell = self.tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as UITableViewCell!
             
-            cell.textLabel?.text = self.animals[indexPath.row]
+            cell.textLabel?.text = self.animals[indexPath.row].name
             
             return cell
         }
@@ -62,7 +66,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let alertController = UIAlertController(title: "New Animal",
                                                     message: "Please add your new animal below:",
                                                     preferredStyle: UIAlertControllerStyle.alert)
-            alertController.addTextField(configurationHandler: {(nameField)in
+            alertController.addTextField(configurationHandler: {(nameField) in
                 nameField.text = ""
                 nameField.placeholder = "Animal Name:"
                 nameField.isSecureTextEntry = false

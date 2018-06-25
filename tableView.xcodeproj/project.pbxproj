@@ -14,6 +14,11 @@
 		C33D389220E15E8E00C42025 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C33D389020E15E8E00C42025 /* LaunchScreen.storyboard */; };
 		C33D389D20E15E8E00C42025 /* tableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33D389C20E15E8E00C42025 /* tableViewTests.swift */; };
 		C33D38A820E15E8E00C42025 /* tableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33D38A720E15E8E00C42025 /* tableViewUITests.swift */; };
+		C33D38BA20E184AF00C42025 /* elephant.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C33D38B520E184AE00C42025 /* elephant.jpg */; };
+		C33D38BB20E184AF00C42025 /* lion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C33D38B620E184AE00C42025 /* lion.jpg */; };
+		C33D38BC20E184AF00C42025 /* horse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C33D38B720E184AE00C42025 /* horse.jpg */; };
+		C33D38BE20E184AF00C42025 /* sheep.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C33D38B920E184AF00C42025 /* sheep.jpg */; };
+		C33D38C020E18B1E00C42025 /* giraffe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C33D38BF20E18B1D00C42025 /* giraffe.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		C33D38A320E15E8E00C42025 /* tableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C33D38A720E15E8E00C42025 /* tableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewUITests.swift; sourceTree = "<group>"; };
 		C33D38A920E15E8E00C42025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C33D38B520E184AE00C42025 /* elephant.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = elephant.jpg; path = ../../animals/elephant.jpg; sourceTree = "<group>"; };
+		C33D38B620E184AE00C42025 /* lion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = lion.jpg; path = ../../animals/lion.jpg; sourceTree = "<group>"; };
+		C33D38B720E184AE00C42025 /* horse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = horse.jpg; path = ../../animals/horse.jpg; sourceTree = "<group>"; };
+		C33D38B920E184AF00C42025 /* sheep.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sheep.jpg; path = ../../animals/sheep.jpg; sourceTree = "<group>"; };
+		C33D38BF20E18B1D00C42025 /* giraffe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = giraffe.jpg; path = ../../animals/giraffe.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +107,11 @@
 		C33D388620E15E8E00C42025 /* tableView */ = {
 			isa = PBXGroup;
 			children = (
+				C33D38B520E184AE00C42025 /* elephant.jpg */,
+				C33D38B720E184AE00C42025 /* horse.jpg */,
+				C33D38B620E184AE00C42025 /* lion.jpg */,
+				C33D38BF20E18B1D00C42025 /* giraffe.jpg */,
+				C33D38B920E184AF00C42025 /* sheep.jpg */,
 				C33D388720E15E8E00C42025 /* AppDelegate.swift */,
 				C33D388920E15E8E00C42025 /* ViewController.swift */,
 				C33D388B20E15E8E00C42025 /* Main.storyboard */,
@@ -232,8 +247,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C33D38BA20E184AF00C42025 /* elephant.jpg in Resources */,
+				C33D38BC20E184AF00C42025 /* horse.jpg in Resources */,
+				C33D38BB20E184AF00C42025 /* lion.jpg in Resources */,
 				C33D389220E15E8E00C42025 /* LaunchScreen.storyboard in Resources */,
+				C33D38BE20E184AF00C42025 /* sheep.jpg in Resources */,
 				C33D388F20E15E8E00C42025 /* Assets.xcassets in Resources */,
+				C33D38C020E18B1E00C42025 /* giraffe.jpg in Resources */,
 				C33D388D20E15E8E00C42025 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
