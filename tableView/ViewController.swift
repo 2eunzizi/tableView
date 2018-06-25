@@ -17,7 +17,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         var image: UIImage
     }
     
-     var animals: [animalList] = []
+    var animals: [animalList] = []
     
     var Giraffe = animalList(name: "Giraffe", image: UIImage(named: "giraffe.jpg")!)
     
