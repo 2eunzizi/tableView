@@ -14,12 +14,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     struct animalList {
         var name: String
-        var image: UIImage
+        var image: UIImage?
     }
     
     var animals: [animalList] = []
     
-    var Giraffe = animalList(name: "Giraffe", image: UIImage(named: "giraffe.jpg")!)
+    var Giraffe = animalList(name: "Giraffe", image: UIImage(named: "giraffe.jpg"))
     
     let cellReuseIdentifier = "cell"
     
@@ -75,7 +75,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             alertController.addAction(UIAlertAction(title: "OK", style: .default, handler:{[weak alertController](_)in
                 let nameField = alertController?.textFields![0]
                 let name = nameField?.text
-                self.animals.append(name: "Giraffe", image: UIImage(named: "giraffe.jpg")!)
+                let imagefield = alertController?.textFields![0]
+                let image = imagefield?.text
+                var newAnimal = animalList(name: name!, image: UIImage(named: "\(image)"))
+                self.animals.append(newAnimal)
                 self.tableView.reloadData()
             }))
             present(alertController, animated: true, completion: nil)
